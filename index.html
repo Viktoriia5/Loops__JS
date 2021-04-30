@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding: 30px;
+        font-family: "Roboto", sans-serif;
+      }
+      button {
+        margin-top: 10px;
+      }
+    </style>
+    <script src="js/sumOfNumbers.js"></script>
+    <script src="js/commonFactor.js"></script>
+    <script src="js/allDividers.js"></script>
+    <script src="js/numberLength.js"></script>
+    <script src="js/typeOfNumbers.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/sliceString.js"></script>
+    <script src="js/dayOfTheWeek.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/powerNumbers.js"></script>
+    <title>Цикли</title>
+  </head>
+  <body>
+    <div>
+      1. Подсчитать сумму всех чисел в заданном пользователем диапазоне.
+    </div>
+    <button onclick="sumOfNumbers()">Sum of numbers</button><br />
+    <br />
+    <div>2. Запросить 2 числа и найти только наибольший общий делитель.</div>
+    <button onclick="commonFactor()">Common Factor</button><br /><br />
+    <div>
+      3. Запросить у пользователя число и вывести все делители этого числа.
+    </div>
+    <button onclick="allDividers()">All dividers</button><br /><br />
+    <div>4. Определить количество цифр в введенном числе.</div>
+    <button onclick="numberLength()">Number length</button><br /><br />
+    <div>
+      5. Запросить у пользователя 10 чисел и подсчитать, сколько он ввел
+      положительных, отрицательных и нулей. При этом также посчитать, сколько
+      четных и нечетных. Вывести статистику на экран. Учтите, что достаточно
+      одной переменной (не 10) для ввода чисел пользователем.
+    </div>
+    <button onclick="typeOfNumbers()">Type of numbers</button><br /><br />
+    <div>
+      6. Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить
+      пример, вывести результат и спросить, хочет ли он решить еще один пример.
+      И так до тех пор, пока пользователь не откажется.
+    </div>
+
+    <div id="text"></div>
+
+    <button onclick="calculator()">Calculator</button><br /><br />
+    <div>
+      7. Запросить у пользователя число и на сколько цифр его сдвинуть. Сдвинуть
+      цифры числа и вывести результат (если число 123456 сдвинуть на 2 цифры, то
+      получится 345612).
+    </div>
+    <button onclick="sliceString()">Slice string</button><br /><br />
+    <div>
+      8. Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть
+      следующий день?» и так до тех пор, пока пользователь нажимает OK.
+    </div>
+    <button onclick="dayOfTheWeek()">Day of the week</button><br /><br />
+    <div>
+      9. Вывести таблицу умножения для всех чисел от 2 до 9. Каждое число
+      необходимо умножить на числа от 1 до 10.
+    </div>
+    <button onclick="powerNumbers()">Power numbers</button><br /><br />
+    <div id="table"></div>
+    <div>
+      10. Игра «Угадай число». Предложить пользователю загадать число от 0 до
+      100 и отгадать его следующим способом: каждую итерацию цикла делите
+      диапазон чисел пополам, записываете результат в N и спрашиваете у
+      пользователя «Ваше число > N, < N или == N?». В зависимости от того, что
+      указал пользователь, уменьшаете диапазон. Начальный диапазон от 0 до 100,
+      поделили пополам и получили 50. Если пользователь указал, что его число >
+      50, то изменили диапазон на от 51 до 100. И так до тех пор, пока
+      пользователь не выберет == N.
+    </div>
+    <button onclick="game()">Game!</button><br /><br />
+  </body>
+</html>
